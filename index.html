@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoot with Suraj Chomie | Cinematic Editor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+top:50%;
+left:50%;
+min-width:100%;
+min-height:100%;
+transform:translate(-50%,-50%);
+object-fit:cover;
+z-index:-2;
+filter:brightness(40%);
+}
+
+.hero::after{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(to bottom, rgba(0,0,0,0.2), #000);
+z-index:-1;
+}
+
+.hero-content h1{
+font-size:50px;
+font-weight:700;
+letter-spacing:2px;
+animation:fadeIn 2s ease forwards;
+}
+
+.hero-content p{
+margin-top:15px;
+font-size:20px;
+font-weight:300;
+animation:fadeIn 3s ease forwards;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 30px;
+border:2px solid gold;
+color:gold;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+display:inline-block;
+}
+
+.btn:hover{
+background:gold;
+color:#000;
+}
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border:1px solid #222;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:gold;
+}
+
+.price{
+color:gold;
+margin-top:10px;
+font-weight:700;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#111;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<video autoplay muted loop>
+<source src="hero.mp4" type="video/mp4">
+</video>
+
+<div class="hero-content">
+<h1>CINEMATIC VIDEO EDITING</h1>
+<p>Premium Reels • Model Shoots • Dance Films</p>
+<a href="#services" class="btn">View Services</a>
+</div>
+</section>
+
+<section id="services">
+<h2>Premium Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Instagram Reel Edit</h3>
+<p>High quality cinematic reel editing.</p>
+<div class="price">$49</div>
+</div>
+
+<div class="card">
+<h3>Model Portfolio Edit</h3>
+<p>Luxury model & fashion edits.</p>
+<div class="price">$79</div>
+</div>
+
+<div class="card">
+<h3>Dance Cinematic Film</h3>
+<p>Professional dance storytelling edit.</p>
+<div class="price">$99</div>
+</div>
+
+<div class="card">
+<h3>Full Music Video Edit</h3>
+<p>Complete music video production style.</p>
+<div class="price">$149</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Why Work With Me?</h2>
+<p style="margin-top:20px; max-width:700px; margin-left:auto; margin-right:auto;">
+I transform raw footage into scroll-stopping cinematic visuals designed for brands, influencers, and creators who want premium quality.
+</p>
+</section>
+
+<footer>
+© 2026 Shoot with Suraj Chomie | All Rights Reserved
+</footer>
+
+</body>
+</html>
