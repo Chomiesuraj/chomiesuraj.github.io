@@ -5,199 +5,181 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shoot with Suraj Chomie</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Montserrat',sans-serif;
 }
 
 body{
-background:#0f0f0f;
+background:#0e0e0e;
 color:white;
-overflow-x:hidden;
 }
 
-section{
-padding:80px 10%;
-text-align:center;
+nav{
+position:fixed;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{
+color:#f5c542;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:14px;
 }
 
 .hero{
 height:100vh;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#000000,#111827,#000000);
-background-size:400% 400%;
-animation:bgMove 8s infinite alternate;
+justify-content:space-between;
+padding:0 8%;
+background:linear-gradient(to right,rgba(0,0,0,0.85),rgba(0,0,0,0.6)),url('suraj.jpg');
+background-size:cover;
+background-position:center;
 }
 
-@keyframes bgMove{
-0%{background-position:left;}
-100%{background-position:right;}
+.hero-text{
+max-width:500px;
 }
 
-h1{
-font-size:55px;
-font-weight:800;
-background:linear-gradient(90deg,#00f5ff,#ff00d4);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+.hero-text h1{
+font-size:42px;
+margin-bottom:20px;
 }
 
-.hero p{
-margin-top:20px;
-font-size:20px;
+.hero-text p{
+font-size:16px;
 opacity:0.8;
+margin-bottom:30px;
 }
 
 .btn{
-margin-top:30px;
-padding:15px 35px;
-border-radius:50px;
+padding:12px 28px;
+background:#f5c542;
+color:black;
 border:none;
 cursor:pointer;
-font-size:16px;
 font-weight:600;
-background:linear-gradient(90deg,#00f5ff,#ff00d4);
-color:black;
-transition:0.4s;
+transition:0.3s;
 }
 
 .btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 25px #00f5ff;
+background:white;
 }
 
-.glass{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
-border-radius:20px;
-padding:40px;
-margin-top:40px;
+section{
+padding:80px 8%;
+text-align:center;
 }
 
-.pricing-container{
+.cards{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:30px;
-margin-top:50px;
+margin-top:40px;
 }
 
-.price-card{
+.card{
 width:280px;
+background:#1a1a1a;
 padding:30px;
-border-radius:20px;
-background:rgba(255,255,255,0.05);
-transition:0.4s;
+border-radius:10px;
+transition:0.3s;
 }
 
-.price-card:hover{
+.card:hover{
 transform:translateY(-10px);
-box-shadow:0 0 25px #ff00d4;
-}
-
-.price-card h2{
-margin-bottom:15px;
-}
-
-.price{
-font-size:35px;
-margin-bottom:15px;
-color:#00f5ff;
-}
-
-a{
-text-decoration:none;
 }
 
 footer{
+background:black;
 padding:30px;
-background:#000;
 text-align:center;
 font-size:14px;
 opacity:0.7;
 }
 
 @media(max-width:768px){
-h1{font-size:35px;}
-.pricing-container{flex-direction:column;align-items:center;}
+.hero{
+flex-direction:column;
+text-align:center;
+padding-top:120px;
+}
+.hero-text h1{
+font-size:30px;
+}
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-<h1>Shoot with Suraj Chomie</h1>
-<p>Cinematic Video Editing for USA Creators & Brands</p>
-<a href="#pricing"><button class="btn">Get Your Video Edited Now</button></a>
-</section>
-
-<section>
-<h2>About Me</h2>
-<div class="glass">
-<p>I help influencers, dancers, and brands turn raw clips into viral cinematic content. Fast delivery, premium transitions, and engaging storytelling.</p>
+<nav>
+<h2>Suraj Chomie</h2>
+<div>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 </div>
-</section>
+</nav>
 
-<section id="pricing">
-<h2>Pricing</h2>
-<div class="pricing-container">
-
-<div class="price-card">
-<h2>Starter</h2>
-<div class="price">$9</div>
-<p>30 sec reel<br>Basic edit<br>Music sync</p>
-<br>
+<div class="hero">
+<div class="hero-text">
+<h1>Professional Cinematic Video Editing</h1>
+<p>I create high quality cinematic edits for creators, dancers and brands. Fast delivery. Clean transitions. Premium look.</p>
 <a href="mailto:surajchomie92@gmail.com">
-<button class="btn">Order Now</button>
+<button class="btn">Hire Me – Starting $9</button>
 </a>
 </div>
-
-<div class="price-card">
-<h2>Pro</h2>
-<div class="price">$29</div>
-<p>60 sec video<br>Cinematic transitions<br>Color grading</p>
-<br>
-<a href="mailto:surajchomie92@gmail.com">
-<button class="btn">Order Now</button>
-</a>
 </div>
 
-<div class="price-card">
-<h2>Premium</h2>
-<div class="price">$79</div>
+<section id="services">
+<h2>My Services</h2>
+<div class="cards">
+<div class="card">
+<h3>Starter – $9</h3>
+<p>30 sec reel edit<br>Basic transitions<br>Music sync</p>
+</div>
+<div class="card">
+<h3>Pro – $29</h3>
+<p>60 sec edit<br>Cinematic transitions<br>Color grading</p>
+</div>
+<div class="card">
+<h3>Premium – $79</h3>
 <p>Full cinematic edit<br>Sound design<br>24h delivery</p>
-<br>
-<a href="mailto:surajchomie92@gmail.com">
-<button class="btn">Order Now</button>
-</a>
 </div>
-
 </div>
 </section>
 
-<section>
+<section id="contact">
 <h2>Contact Me</h2>
-<div class="glass">
 <p>Email: surajchomie92@gmail.com</p>
 <br>
 <a href="https://www.instagram.com/video_shoot_ending__production" target="_blank">
 <button class="btn">Instagram DM</button>
 </a>
-</div>
 </section>
 
 <footer>
-© 2026 Shoot with Suraj Chomie | All Rights Reserved
+© 2026 Shoot with Suraj Chomie
 </footer>
 
 </body>
 </html>
+
